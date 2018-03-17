@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lib-retrofit-rxjava</string>
+
+    <!--网络请求解析的Code描述-->
+    <string name="data_rsp_error_unknown">请求错误</string>
+
+    <!--网络错误-->
+    <string name="data_http_error_unknown">请求错误...</string>
+    <string name="data_http_error_timeout">请求超时...</string>
+    <string name="data_http_error_network">网络异常...</string>
+    <string name="data_http_error_null">服务器异常...</string>
+    <string name="data_http_error_network_warning">网络不给力,请检查网络设置。</string>
+</resources>

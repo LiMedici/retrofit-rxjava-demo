@@ -1,0 +1,21 @@
+project.ext{
+    //java语言相关
+    javaVersion = 8
+    //JDK版本兼容
+    targetCompatibility = this.&getJavaVersion()
+    sourceCompatibility = this.&getJavaVersion()
+
+}
+
+def getJavaVersion(){
+    switch (project.ext.javaVersion){
+        case '6':
+            return org.gradle.api.JavaVersion.VERSION_1_6
+        case '7':
+            return org.gradle.api.JavaVersion.VERSION_1_7
+        case '8':
+            return org.gradle.api.JavaVersion.VERSION_1_8
+        default:
+            return org.gradle.api.JavaVersion.VERSION_1_7
+    }
+}
